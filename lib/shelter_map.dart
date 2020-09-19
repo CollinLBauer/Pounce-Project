@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-//import 'package:geolocator/geolocator.dart';
-
-//Position position;
-//List<Placemark> placemark;
 
 
 class Shelter_Map extends StatefulWidget {
@@ -44,20 +40,5 @@ class _Shelter_MapState extends State<Shelter_Map> {
     );
   }
 }
-
-/* void updateLocation() async {
-  try {
-    Position newPosition = await Geolocator().getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
-        .timeout(new Duration(seconds: 5));
-    List<Placemark> newPlacemark = await Geolocator().placemarkFromPosition(position);
-
-    position = newPosition;
-    placemark = newPlacemark;
-
-  } catch (e) {
-    print('Error: ${e.toString()}');
-  }
-}
- */
 
 
