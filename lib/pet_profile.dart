@@ -16,6 +16,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
   Widget build(BuildContext context) {
 //EchoAR echo = EchoAR(apiKey: "<Key>");
     return Scaffold(
+      backgroundColor: Colors.deepPurple[100],
       body: Column(
         children: <Widget>[
           Row(
@@ -80,7 +81,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
             child: Row(
               children: <Widget>[
                 Text(
-                  "Likes: Treats, Cuddles, and Toys on Strings", //LIKES
+                  "Likes: Treats, Cuddles, Toys on Strings", //LIKES
                   style: TextStyle(fontSize: 20),
                 ),
               ]
