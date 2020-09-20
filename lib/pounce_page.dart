@@ -20,34 +20,44 @@ class _PounceState extends State<Pounce> {
   List<Pet> pets = [
     Pet(name: 'Dory', age: '1', species: 'Cat', breed: '', hearted: false),
     Pet(name: 'Earl', age: '1', species: 'Cat', breed: '', hearted: false),
-    //Pet(name: 'Siri', age: '1', species: 'Cat', breed: '', hearted: false),
-    //Pet(name: 'Carl', age: '1', species: 'Dog', breed: 'Corgi mix', hearted: false),
+    Pet(name: 'Siri', age: '1', species: 'Cat', breed: '', hearted: false),
+    Pet(name: 'Carl', age: '1', species: 'Dog', breed: 'Corgi mix', hearted: false),
   ];
 
-  List<String> petNames = [
-    'Dory',
-    'Earl',
-    //'Siri',
-    //'Carl',
-  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        backgroundColor: Colors.deepPurple[200],
+        body: Container(
+          child: PetCard(pet: pets[1]),
+        )
+    );
+  }
+}
 
-  Widget petCard(pet) {
+class PetCard extends StatelessWidget {
+
+  final Pet pet;
+  PetCard({ this.pet });
+
+  @override
+  Widget build(BuildContext context) {
     return Card(
         color: Colors.grey[300],
         margin: EdgeInsets.fromLTRB(16.0, 20.0, 16.0, 0.0),
         child: Padding(
-            padding: const EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(10.0),
             child: Column(
                 children: <Widget>[
                   Text(
-                      "Dory", //pet.name,
+                      pet.name,
                       style: TextStyle(
                           fontSize: 40,
                           fontWeight: FontWeight.bold
                       )
                   ),
                   Image(
-                    image: AssetImage('assets/pets/Dory.jpg'),
+                    image: AssetImage('assets/pets/${pet.name}.png'),
                     height: 400,
                     width: 400,
                   ),
@@ -55,7 +65,7 @@ class _PounceState extends State<Pounce> {
                       children: <Widget>[
                         Expanded(
                             child: Text(
-                                "cat",
+                                pet.species,
                                 style: TextStyle(
                                     fontSize: 25,
                                     fontWeight: FontWeight.bold
@@ -64,7 +74,7 @@ class _PounceState extends State<Pounce> {
                         ),
                         Expanded(
                             child: Text(
-                                'Age: 1', //+ pet.age,
+                                'Age: ' + pet.age,
                                 textAlign: TextAlign.right,
                                 style: TextStyle(
                                     fontSize: 25,
@@ -79,21 +89,4 @@ class _PounceState extends State<Pounce> {
         )
     );
   }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.deepPurple[200],
-        body: Container(
-          child: Column(
-              children: <Widget> [
-                petCard('Dory')
-              ]
-          ),
-
-
-        )
-    );
-  }
-
 }
