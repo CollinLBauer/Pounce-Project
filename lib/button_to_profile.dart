@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pounce_project/pet_profile.dart';
+import 'file:///C:/Users/ilall/Desktop/SillyHacks/Pounce-Project/lib/backend/pets/pet_profile.dart';
 
 class Button_to_Profile extends StatefulWidget {
   @override

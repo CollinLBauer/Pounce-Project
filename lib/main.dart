@@ -9,8 +9,10 @@
 // ![A scaffold with a bottom navigation bar containing three bottom navigation
 // bar items. The first one is selected.](https://flutter.github.io/assets-for-api-docs/assets/material/bottom_navigation_bar.png)
 
+//TODO Rename pet images with real pet names
+//TODO Associate pet object list with Hearted page
+
 import 'package:flutter/material.dart';
-import 'package:pounce_project/pet_profile.dart';
 import 'package:pounce_project/user_profile.dart';
 import 'shelter_map.dart';
 import 'hearted.dart';
@@ -44,15 +46,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
   TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
-    User_Profile (
-    ),
+    User_Profile(),
     Pounce(),
-    Text(
-      'Index 2: Home',
-      style: optionStyle,
-    ),
     Hearted(),
-
     Shelter_Map(),
   ];
 
@@ -64,10 +60,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Pounce'),
-        backgroundColor: Colors.deepPurpleAccent,
-      ),
+
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
@@ -81,11 +74,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           BottomNavigationBarItem(
             icon: Icon(Icons.pets),
             title: Text('Pounce'),
-            backgroundColor: Colors.tealAccent,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text('Home'),
             backgroundColor: Colors.tealAccent,
           ),
           BottomNavigationBarItem(
