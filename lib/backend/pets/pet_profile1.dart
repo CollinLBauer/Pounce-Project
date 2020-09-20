@@ -5,12 +5,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:echoar_package/echoar_package.dart';
 
-class  Pet_Profile extends StatefulWidget {
+class  Pet_Profile1 extends StatefulWidget {
   @override
-  _Pet_ProfileState createState() => _Pet_ProfileState();
+  _Pet_ProfileState1 createState() => _Pet_ProfileState1();
 }
 
-class _Pet_ProfileState extends State<Pet_Profile> {
+class _Pet_ProfileState1 extends State<Pet_Profile1> {
   @override
   String url = 'https://www.charlestonanimalsociety.org/';
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
               child: Row(
                 children: <Widget>[
                   Text(
-                    "Dory", //NAME
+                    "Earl", //NAME
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 70),
                   ),
                   Text(
@@ -61,7 +61,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
               color: Colors.grey[300],
               margin: EdgeInsets.fromLTRB(16.0, 20.0, 16.0, 0.0),
               child: Image(
-                image: AssetImage('assets/pets/Dory.png'), //IMAGE
+                image: AssetImage('assets/pets/Earl.png'), //IMAGE
                 height: 375,
                 width:375,
               ),
@@ -82,7 +82,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
                 child: Row(
                     children: <Widget>[
                       Text(
-                        "Likes: Treats, Cuddles, Toys on Strings", //LIKES
+                        "Likes: Playing & Chin Scratches", //LIKES
                         style: TextStyle(fontSize: 20),
                       ),
                     ]
@@ -104,7 +104,7 @@ class _Pet_ProfileState extends State<Pet_Profile> {
               child: Row(
                   children: <Widget>[
                     Text(
-                      "Deal Breakers: Children", //DEAL BREAKERS
+                      "Deal Breakers: Nothing", //DEAL BREAKERS
                       style: TextStyle(color: Colors.red, fontSize: 20),
                     ),
                   ]
