@@ -30,7 +30,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/001.png'),
+                              image: AssetImage('assets/pets/Bear.png'),
                               height: 75,
                               width: 75,
                             )
@@ -91,7 +91,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/002.png'),
+                              image: AssetImage('assets/pets/Carl.png'),
                               height: 75,
                               width: 75,
                             )
@@ -152,7 +152,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/003.png'),
+                              image: AssetImage('assets/pets/Carly.png'),
                               height: 75,
                               width: 75,
                             )
@@ -213,7 +213,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/004.png'),
+                              image: AssetImage('assets/pets/Cloudy.png'),
                               height: 75,
                               width: 75,
                             )
@@ -274,7 +274,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/005.png'),
+                              image: AssetImage('assets/pets/Dory.png'),
                               height: 75,
                               width: 75,
                             )
@@ -335,7 +335,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/006.png'),
+                              image: AssetImage('assets/pets/Earl.png'),
                               height: 75,
                               width: 75,
                             )
@@ -396,7 +396,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/007.png'),
+                              image: AssetImage('assets/pets/Fluff.png'),
                               height: 75,
                               width: 75,
                             )
@@ -457,7 +457,7 @@ class HeartedState extends State<Hearted> {
                         child: Container(
                           //color: Colors.purple,
                             child: Image(
-                              image: AssetImage('assets/pets/008.png'),
+                              image: AssetImage('assets/pets/Honey.png'),
                               height: 75,
                               width: 75,
                             )
