@@ -15,6 +15,10 @@ class HeartedState extends State<Hearted> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: const Text("Pounced On",),
+          backgroundColor: Colors.deepPurpleAccent,
+        ),
         body: ListView(
             children: [
 

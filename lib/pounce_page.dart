@@ -27,6 +27,10 @@ class _PounceState extends State<Pounce> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: const Text("Pounce",),
+          backgroundColor: Colors.deepPurpleAccent,
+        ),
         backgroundColor: Colors.deepPurple[200],
         body: Container(
           child: PetCard(pet: pets[1]),
